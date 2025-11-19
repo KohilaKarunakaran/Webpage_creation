@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Sree+Krushnadevaraya&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="nav">
+            <nav>
+                <div id="logo" class="nav-items">
+                    <a href="index.html">Ratkaisukeskeinen ja Sielunhoito terapia</a>
+                </div>
+                <div id="menu">
+                    <ul>
+                        <li class="menu-items" class="nav-items"><a href="palvelut&hinnasto.html">Palvelut &
+                                Hinnasto</a></li>
+                        <li class="menu-items" class="nav-items"><a href="esittely.html">Esittely</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <div id="homepage">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img class="slideImage" src="images/SlideImage1.jpg" alt="slide1">
+                    <div class="slideText">
+                        <h1>Tervetuloa Toivonlähteelle!</h1>
+                        <h2>Parantavaa hoitoa keholle, mielelle ja sielulle
+                        </h2>
+                        <h3>Empaattinen, luova terapia henkilökohtaisella otteella</h3>
+                        <button class="soita">Soita <br> 0407493332</button>
+                    </div>
+                </div>
+
+                <!--slide2-->
+                <div class="mySlides fade">
+                    <img class="slideImage" src="images/SlideImage2.jpg" alt="slide3">
+                    <div class="slideText">
+                        <h1>Kaipaatko Suuntaviivoja Elämääsi?</h1>
+                        <p class="slidePara">Oletko elämässäsi kohdassa, jossa kaipaat uusia suuntaviivoja? Tuntuuko,
+                            että ilo ja merkityksellisyys ovat kadonneet? Onko elämäsi punainen lanka hukkunut kiireen
+                            ja paineiden alle?</p>
+                        <button class="soita">Soita <br> 0407493332</button>
+                    </div>
+                </div>
+                <!--slide3-->
+                <div class="mySlides fade">
+                    <img class="slideImage" src="images/SlideImage3.jpg" alt="slide5">
+                    <div class="slideText">
+                        <h1>Ratkaisukeskeistä ja sielunhoidollista tukea juuri sinulle</h1>
+                        <p class="slidePara">Löydä uusia näkökulmia ja voimavaroja arjen haasteisiin.</p>
+                        <p class="slidePara">Keskitymme mahdollisuuksiin, emme vain ongelmiin.</p>
+                        <p class="slidePara">Terapeuttinen vuorovaikutus vahvistaa itsetuntoasi ja uskoa tulevaisuuteen.
+                        </p>
+                        <blockquote id="quote">
+                            “Yhdessä löydämme polun, joka johtaa kohti selkeyttä, tasapainoa ja toivoa.”
+                        </blockquote>
+                        <button class="soita">Soita <br> 0407493332</button>
+                    </div>
+                </div>
+
+            </div>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <div id="homepageText">
+            <h1>Olet löytänyt oikean paikan</h1>
+            <p>Tarjoan ratkaisukeskeistä keskusteluapua elämän solmukohtiin ammattitaidolla ja rennolla otteella. Olen
+                Hanna Ruohonen, ratkaisukeskeinen terapeutti, sielunhoitoterapeutti, ja haluan auttaa sinua löytämään
+                oman reittisi kohti hyvää elämää.</p>
+            <button id="palvelutLink">Lue lisää palveluistani</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <ul>
+                <li>
+                    <h2>Ratkaisukeskeinen ja Sielunhoito terapia</h2>
+                </li>
+                <li id="nimi">
+                    <h3>Hanna Ruohonen</h3>
+                </li>
+                <li>hannaruohonen777@gmail.com</li>
+                <li>0407493332</li>
+                <li class="address">kirjaskatu 7 (3 krs)</li>
+                <li>37600 Valkeakoski </li>
+                <li>(sisäänkäynti rakennuksen takaa)</li>
+            </ul>
+            <div class="links">
+                <ul>
+                    <li class="menu-items"><a href="index.html">Koti</a></li>
+                    <li class="menu-items"><a href="palvelut&hinnasto.html">Palvelut & Hinnasto</a></li>
+                    <li class="menu-items"><a href="esittely.html">Esittely</a></li>
+                </ul>
+            </div>
+            <p>© 2024 Ratkaisukeskeinen ja Sielunhoito terapeutti - Hanna Ruohonen. </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

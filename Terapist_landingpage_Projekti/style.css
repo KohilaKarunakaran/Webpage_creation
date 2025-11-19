@@ -1,0 +1,175 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-ivory-cream);
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    letter-spacing: 0.05em;
+    line-height: 1.3em;
+    margin: 0 auto;
+    font-weight: 600;
+}
+
+/*navbar*/
+header {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+}
+
+p {
+    font-size: 20px;
+}
+
+#menu a,
+#logo a {
+    color: #f305ab;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+
+#logo {
+    flex: 40%;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 1000;
+    text-wrap: wrap;
+    margin: 10px 100px 10px 100px;
+}
+
+#menu {
+    flex: 40%;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#menu .menu-items {
+    border: 2px solid #f305ab;
+    width: 100px;
+    text-align: center;
+    color: #f305ab;
+    transition: all 0.3s ease-in;
+}
+
+#menu .menu-items:hover {
+    background-color: #a1ebe7;
+    font-size: 20px;
+    transform: scale(1.05);
+}
+
+/*Footer*/
+.footer {
+    background-image: url(images/beads.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+    width: 100%;
+}
+
+.footer .address {
+    margin-top: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li h2,
+.footer li #nimi {
+    margin-bottom: 20px;
+}
+
+.footer li {
+    line-height: 1.5em;
+}
+
+.footer .links li {
+    display: inline;
+
+}
+
+.footer .links a {
+    color: #f305ab;
+}
+
+.footer line {
+    width: 2px;
+    height: 5px;
+    background-color: #f305ab;
+}
+
+@media only screen and (max-width: 1060px) {
+    nav {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #logo {
+        margin: 10px 20px 10px 20px;
+    }
+
+    .footer ul {
+        margin-left: -50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    header {
+        height: 180px;
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    nav #menu {
+        margin-left: 70px;
+    }
+
+    #logo {
+        width: 400px;
+        margin-left: 100px;
+    }
+
+    .slideText {
+        width: 95%;
+        max-width: 100%;
+        font-size: 18px;
+    }
+
+    .slidePara {
+        font-size: 20px;
+    }
+}

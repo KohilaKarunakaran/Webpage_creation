@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sree Krushnadevaraya", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0 auto;
+    background-color: #F2E3B6;
+    word-spacing: 0.5px;
+    line-height: 1.2;
+    min-height: 100vh;
+}
+
+/*styling navbar*/
+.navbar {
+    width: 100%;
+    height: 100px;
+    background-color: #428C7F;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar-container {
+    margin: 10px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    margin-top: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 100px;
+    height: 100%;
+}
+
+.menu {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    padding: 10px;
+    justify-content: right;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+/*styling main*/
+.main .background {
+    background-image: url(Images/Backgroung_img.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-self: center;
+}
+
+/*styling homecontainer*/
+.main .homecontainer {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 2% 5% 2% 5%;
+    box-shadow: #428C7F 5px 5px 5px;
+}
+
+.homecontainer .firstrow {
+    margin: 0 auto;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.homecontainer .secondrow {
+    margin: 0 auto;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.homecontainer .left {
+    flex: 60%;
+    background-color: #DFAC5D;
+}
+
+.homecontainer .right {
+    flex: 40%;
+}
+
+.homecontainer p {
+    font-size: 26px;
+    text-wrap: wrap;
+    padding: 5px;
+    text-align: justify;
+    margin-right: 5px;
+
+}
+
+.homecontainer .box img {
+    height: 100%;
+    width: 100%;
+}
+
+/*styling homecontainer*/
+
+.main .gallery-container {
+    width: 90%;
+    height: 600px;
+    margin: 5% 5% 2% 5%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding-left: 2px;
+    padding-right: 1px;
+}
+
+.gallery-container>div {
+    width: 33.2%;
+    height: 200px;
+}
+
+.gallery-container .image2,
+.gallery-container .image6 {
+    height: 400px;
+}
+
+.gallery-container img {
+    height: 100%;
+    width: 100%;
+    padding-bottom: 2px;
+}
+
+footer div {
+    display: flex;
+    height: 80px;
+    background-color: #444034;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div p {
+    color: white;
+    font-size: 24px;
+}
+
+/* Responsive adjustment */
+
+@media (max-width: 860px) {
+    .homecontainer p {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 770px) {
+    .logo {
+        left: 15%;
+    }
+
+    .main .background {
+        height: 200px;
+    }
+
+    .main .homecontainer {
+        height: 400px;
+    }
+
+    .homecontainer p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .main .homecontainer {
+        height: 300px;
+    }
+
+    .homecontainer p {
+        font-size: 15px;
+    }
+
+    .main .gallery-container {
+        height: 1800px;
+    }
+
+    .gallery-container>div {
+        width: 100%;
+        height: 200px;
+    }
+
+    footer div p {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .menu a {
+        font-size: 24px;
+    }
+
+    .homecontainer p {
+        font-size: 13px;
+    }
+}
